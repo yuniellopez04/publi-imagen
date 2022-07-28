@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  
+  <head>
+  
+  <link rel="stylesheet" href="styles.css">
+  <title>Formulario de encuesta</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">   
+  </head>
+
+  <body>
+
+    <div class="container">
+      <header class="header">
+<h1 id="title" class="text">Star Cleaning Encuesta de calidad de nuestros servicios</h1>
+
+<p id="description" class="description text-center">Con el fin de mejorar la calidad de nuestros servicios y asegurar la satisfacción de todos nuestros clientes, agradeceríamos respondiera a este cuestionario.Le rogamos dedique un minuto a rellenar este cuestionario<p>
+
+</header>
+
+<form id="survey-form">
+<div class="form-group"><label id="name-label" for="name">Nombre</label>
+<input type="text" name="name" id="name" class="form-control" placeholder="Introduzca su nombre" required="">
+</div>
+
+
+<div class="form-group"><label id="email-label" for="email">Correo</label>
+<input type="email" name="email" id="email" class="form-control" placeholder="Introduce tu correo electrónico" required="">
+</div>
+
+
+<div class="form-group"><label id="number-label">Años(opcional)</label>
+<input type="number" name="age" id="number" min="1" max="100" class="form-control" placeholder="Años">
+</div>
+
+
+<div class="form-group"><p>¿Cuál es su grado de satisfacción con Star Cleaning?<p>
+  <label>
+<select id="dropdown" name="role" class="form-control" required>
+<option disabled selected value>Seleccione su grado de satisfacción actual</option>  
+<option value="muyMalo">Muy Malo</option>
+<option value="Malo">Malo</option>
+<option value="medio">Medio</option>
+<option value="bueno">Bueno</option>
+<option value="muybueno">Muy bueno</option>
+</select>
+</label>
+</div>
+
+
+<div class="form-group"><p>¿Recomendarias Star Cleaning a tus amigo?</p>
+<label>
+<input name="user-recommend" value="Seguro lo recomendaria" type="radio" class="input-radio" checked>Seguro lo recomendaria
+</label>
+<label>
+<input name="user-recommend" value="Quizas" type="radio" class="input-radio" checked>Quizás
+</label>
+<label>
+<input name="user-recommend" value="Muy poco provable" type="radio" class="input-radio" checked>Muy poco provable
+</label>
+</div>
+
+
+<div class="form-group">
+<p>¿Para que parte de la casa te gustaria una limpieza profunda?</p>
+<label>
+<select id="dropdown" name="role" class="form-control" required>
+<option disabled selected value>Seleccione su grado de satisfacción actual</option>  
+<option value="toda la casa">Toda la casa</option>
+<option value="baños">Baños</option>
+<option value="cosina">Cosina</option>
+<option value="cuartos">Cuartos</option>
+<option value="sala">Sala</option>
+<option value="comedor">Comedor</option>
+</select>
+</label>
+</div>
+
+
+<div class="form-group">
+<p>¿Cuales son los productos favoritos para la limpieza de tu hogar?</p>
+<label>
+<input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Somat</label>
+<label>
+<input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Don limpio</label>
+<label>
+<input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Sanytol</label>
+<label>
+<input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Fabuloso</label>
+<label> 
+<input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Finish</label>
+<label>
+<input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Cillit Bang</label>
+<label>
+<input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox"> Lysol</label>
+<label> 
+<input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">CIF</label>
+<label>
+<input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox"> Pronto</label>
+<label>
+<input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Ajax</label>
+</div>
+
+
+<div class="form-group">
+<p>Por favor dejenos saber su opinion para mejorar nuestro servicios</p>
+<textarea id="comments" class="input-textarea" name="comments" placeholder="Deja tu opinion aqui"></textarea>
+</div>
+
+
+<div class="form-group">
+<button type="submit" id="submit" class="submit-button">Enviar</button>
+
+</div>
+
+
+</form>
+ 
+  </body>
+
+</html>
